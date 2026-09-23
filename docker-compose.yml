@@ -1,0 +1,18 @@
+services:
+  backend:
+    build: ./backend
+    env_file: ./backend/.env
+    ports: ["8000:8000"]
+    depends_on: [realtime]
+  realtime:
+    build: ./realtime-service
+    env_file: ./realtime-service/.env
+    ports: ["3001:3001"]
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: ${VITE_API_URL:-http://localhost:8000}
+        VITE_SOCKET_URL: ${VITE_SOCKET_URL:-http://localhost:3001}
+    ports: ["5173:80"]
+    depends_on: [backend, realtime]

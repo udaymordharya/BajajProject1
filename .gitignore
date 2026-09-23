@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+**/node_modules/
+**/dist/
+**/__pycache__/
+**/.pytest_cache/
+**/.coverage
+**/venv/
+credentials.json
+service-account.json
+*.pem
+*.key
+*.p12
+*.log
