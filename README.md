@@ -292,8 +292,8 @@ of overwriting newer data.
 -   Never commit service-account private keys or API keys.
 
 
-```Future Plans:
-Google OAuth 2.0 Authentication: Implement Google login to support secure multi-user authentication and manage individual user sessions.
-User-Specific Google Drive & Sheets Access: Use Google Cloud Console and OAuth permissions to allow each authenticated user to connect and access their own Google Drive files and Google Sheets instead of using a shared service account.
-CI/CD Automation: Implement a CI/CD pipeline using GitHub Actions to automatically test the application, build Docker images, and prepare releases whenever changes are pushed to GitHub.
-Automated Deployment: Extend the CI/CD pipeline to automatically deploy validated changes to the EC2 server, eliminating the current manual process of SSH, pulling the latest code, rebuilding containers, and restarting the application.
+## Future Plans:
+- Google OAuth 2.0 Authentication: Implement Google login to support secure multi-user authentication and manage individual user sessions.
+- User-Specific Google Drive & Sheets Access: Use Google Cloud Console and OAuth permissions to allow each authenticated user to connect and access their own Google Drive files and Google Sheets instead of using a shared service account.
+- CI/CD Automation: Implement a CI/CD pipeline using GitHub Actions to automatically test the application, build Docker images, and prepare releases whenever changes are pushed to GitHub.
+- Automated Deployment: Extend the CI/CD pipeline to automatically deploy validated changes to the EC2 server, eliminating the current manual process of SSH, pulling the latest code, rebuilding containers, and restarting the application.
